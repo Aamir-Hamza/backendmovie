@@ -4,7 +4,7 @@ app.use(express.json());
 const dbconnection = require("./config/db");
 const router = require("./routes/users");
 require("dotenv").config();
-const port = process.env.Port;
+const port = process.env.Port||2025;
 
 // Database connection
 const startServer = async () => {
